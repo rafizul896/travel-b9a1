@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+.container {
+    width: 81.25%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+/* Header style here */
+
+/* Navber */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 16.63px;
+}
+
+.nav-logo h1 {
+    color: #131318;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.nav-logo span {
+    color: #FF5400;
+}
+
+.nav-items {
+    display: flex;
+    gap: 44px;
+}
+
+.nav-items .home a {
+    color: #FF5400;
+}
+
+.nav-items li {
+    list-style-type: none;
+}
+
+.nav-items li a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #424247;
+    text-decoration: none;
+}
+
+.menu {
+    font-size: 24px;
+    display: none;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 600px) {
+
+    /* Header */
+
+    .container {
+        width: 90%;
+    }
+
+    .nav-logo {
+        gap: 8px;
+    }
+
+    .nav-logo img {
+        width: 25%;
+    }
+
+    .nav-logo h1 {
+        font-size: 21.543px;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+}
