@@ -64,6 +64,102 @@ nav {
     display: none;
 }
 
+/* Banner */
+
+.banner {
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    border-radius: 16px;
+}
+
+.banner-title {
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 800;
+    text-align: center;
+    padding: 106px 0 24px 0;
+}
+
+.banner-description {
+    color: #FFF;
+    width: 676px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0px 0 48px 0;
+}
+
+.search-box {
+    text-align: center;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    width: 800px;
+    padding: 16px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    /* padding-bottom: 106px; */
+}
+
+.search-box input {
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    outline: 0;
+}
+
+.search-box input:focus {
+    border: 2px solid #FF5400;
+}
+
+.search-box select {
+    background-image: url(../Extra/download.svg);
+    background-position: right 15px center;
+    background-repeat: no-repeat;
+    background-size: auto 35%;
+    border: none;
+    padding: 16px;
+    outline: 0;
+    appearance: none;
+    border-radius: 8px;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.search-box select:focus {
+    border: 2px solid #FF5400;
+}
+
+.search-box button {
+    background-color: #FF5400;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px 0;
+    border-radius: 8px;
+}
+
+.search-box button i {
+    font-size: 24px;
+}
+
+.popular-tours {
+    margin-top: 100px;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 600px) {
@@ -93,4 +189,30 @@ nav {
     .menu {
         display: block;
     }
+
+    /* Banner */
+
+    .banner {
+        background-size: 210% 100%;
+        background-position: 50%;
+        height: 540px;
+    }
+
+    .banner-title {
+        font-size: 22px;
+        padding-top: 32px;
+    }
+
+    .banner-description {
+        font-size: 14px;
+        width: 90%;
+        line-height: 21px;
+    }
+
+    .search-box {
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+
+
 }
