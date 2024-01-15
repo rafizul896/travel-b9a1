@@ -203,6 +203,79 @@ nav {
     margin-top: 10px;
 }
 
+/* Choose Your Destination style here */
+
+.destination-title {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.destination-description {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 24px 0 48px 0;
+}
+
+.destination-place {
+    display: grid;
+    gap: 24px;
+    grid-template-areas:
+        "Maldives Maldives Maldives Maldives Maldives Maldives Indonesia Indonesia Indonesia Indonesia Indonesia Indonesia"
+        "Srilanka Srilanka Srilanka Srilanka North-America North-America North-America North-America North-America Kashmir Kashmir Kashmir"
+        "Bangladesh Bangladesh Bangladesh Bangladesh Bangladesh Bandarban Bandarban Bandarban Bandarban Bandarban Bandarban Bandarban"
+    ;
+}
+
+.places img {
+    width: 100%;
+}
+
+.place-img-1 {
+    grid-area: Maldives;
+}
+
+.place-img-2 {
+    grid-area: Indonesia;
+}
+
+.place-img-3 {
+    grid-area: Srilanka;
+}
+
+.place-img-4 {
+    grid-area: North-America;
+}
+
+.place-img-5 {
+    grid-area: Kashmir;
+}
+
+.place-img-6 {
+    grid-area: Bangladesh;
+}
+
+.place-img-7 {
+    grid-area: Bandarban;
+}
+
+.places {
+    position: relative;
+}
+
+.places h3 {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 800;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 /* Responsive */
 
@@ -277,11 +350,41 @@ nav {
     }
 
     .tours-text li {
+        font-size: 14px;
         padding-bottom: 12px;
     }
 
     .popular-tours-img img {
         width: 100%;
+    }
+
+    /* Destination section */
+
+    .destination-place {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .destination-title {
+        font-size: 20px;
+    }
+
+    .destination-description {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        padding: 16px 0;
+    }
+
+    .places img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+
+    .places h3 {
+        font-size: 20px;
     }
 
 }
