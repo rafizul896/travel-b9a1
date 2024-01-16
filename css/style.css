@@ -7,6 +7,10 @@
     font-family: 'Mulish', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     width: 81.25%;
     margin: 0 auto;
@@ -307,14 +311,14 @@ nav {
 }
 
 .service-1 {
-    width: 49%;
+    width: 48%;
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
 }
 
 .service-2 {
-    width: 49%;
+    width: 48%;
     border-radius: 16px;
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
@@ -347,12 +351,92 @@ nav {
     text-align: start;
 }
 
+/* Newsletter style here */
 
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.newsletter-text {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #FF5400;
+    padding: 50px;
+    border-radius: 8px;
+    width: 42%;
+}
+
+.newsletter-text input {
+    background: rgba(19, 19, 24, 0.05);
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+    padding: 16px 0 16px 20px;
+    border: none;
+    margin-bottom: 16px;
+}
+
+.newsletter-text .news-btn {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 14px 0;
+    border: none;
+    background-color: #FF5400;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.newsletter-text h1 {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.newsletter-text p {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 16px 0 24px 0;
+}
+
+.newsletter-img {
+    position: relative;
+}
+
+.news-discount-btn {
+    position: absolute;
+    transform: rotate(-30deg);
+    right: 0;
+    bottom: 67px;
+}
+
+.news-discount-btn button {
+    border-radius: 16px;
+    background: #FF5400;
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 800;
+    border: none;
+    padding: 15px 30px;
+}
+
+.news-discount-btn button a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+}
 
 /* Footer style here */
 footer {
     background: rgba(19, 19, 24, 0.05);
     padding: 100px 0;
+    margin-top: 100px;
 }
 
 .foot-logo {
@@ -454,6 +538,7 @@ footer {
         font-size: 14px;
         width: 90%;
         line-height: 21px;
+        text-align: start;
     }
 
     .search-box {
@@ -540,12 +625,64 @@ footer {
         font-size: 14px;
     }
 
+    /* Newsletter */
 
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .newsletter-text {
+        width: 100%;
+        padding: 24px;
+    }
+
+    .newsletter-text h1 {
+        font-size: 20px;
+    }
+
+    .newsletter-text p {
+        font-size: 14px;
+    }
+
+    .newsletter-img img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+
+    .news-discount-btn {
+        position: absolute;
+        transform: rotate(-30deg);
+        right: 0;
+        bottom: 48px;
+    }
+    
+    .news-discount-btn button {
+        border-radius: 16px;
+        background: #FF5400;
+        color: #FFF;
+        font-size: 21px;
+        font-weight: 800;
+        border: none;
+        padding: 15px 30px;
+    }
+    
+    .news-discount-btn button a {
+        text-decoration: none;
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    
+    
 
     /* Footer */
 
     footer {
         padding: 33px 0;
+        margin-top: 50px;
     }
 
     .foot-logo h1 {
