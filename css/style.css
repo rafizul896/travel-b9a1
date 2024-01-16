@@ -318,7 +318,7 @@ nav {
 }
 
 .service-2 {
-    width: 48%;
+    width: 49%;
     border-radius: 16px;
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
@@ -349,6 +349,66 @@ nav {
     font-weight: 400;
     line-height: 26px;
     text-align: start;
+}
+
+/* Perfect-place style here */
+
+.perfect-place {
+    display: flex;
+    gap: 28px;
+    position: relative;
+}
+
+.perfect-place-text {
+    padding-right: 30px;
+}
+
+.perfect-place-text h1 {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 50px;
+}
+
+.perfect-place-text p {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 16px 0;
+}
+
+.perfect-place-text ul {
+    margin-left: 15px;
+}
+
+.perfect-place-text ul li {
+    color: #131318;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    padding-bottom: 14px;
+}
+
+.perfect-place-text .primary-btn {
+    display: inline-block;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 8px;
+    background: #FF5400;
+    padding: 14px 42px;
+    margin-top: 14px;
+}
+
+.perfect-place-video {
+    width: 100%;
+}
+
+.perfect-place-video iframe {
+    width: 100%;
+    height: 95%;
+    border-radius: 16px;
 }
 
 /* Newsletter style here */
@@ -625,6 +685,32 @@ footer {
         font-size: 14px;
     }
 
+    /* perfect-place */
+
+    .perfect-place {
+        flex-direction: column;
+    }
+
+    .perfect-place-video iframe {
+        height: 190px;
+    }
+
+    .perfect-place-text h1 {
+        font-size: 20px;
+        line-height: normal;
+        margin-top: 15px;
+    }
+
+    .perfect-place-text p {
+        font-size: 14px;
+        padding: 14px 0;
+    }
+
+    .perfect-place-text ul li {
+        font-size: 14px;
+        padding-bottom: 12px;
+    }
+
     /* Newsletter */
 
     .newsletter {
@@ -644,7 +730,7 @@ footer {
         font-size: 14px;
     }
 
-    .newsletter-img img{
+    .newsletter-img img {
         width: 100%;
         height: 300px;
         object-fit: cover;
@@ -657,7 +743,7 @@ footer {
         right: 0;
         bottom: 48px;
     }
-    
+
     .news-discount-btn button {
         border-radius: 16px;
         background: #FF5400;
@@ -667,7 +753,7 @@ footer {
         border: none;
         padding: 15px 30px;
     }
-    
+
     .news-discount-btn button a {
         text-decoration: none;
         color: #FFF;
@@ -675,8 +761,8 @@ footer {
         font-weight: 400;
     }
 
-    
-    
+
+
 
     /* Footer */
 
