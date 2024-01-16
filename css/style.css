@@ -13,6 +13,10 @@
     max-width: 1440px;
 }
 
+section {
+    margin-top: 100px;
+}
+
 /* Header style here */
 
 /* Navber */
@@ -159,7 +163,6 @@ nav {
 /* Popular tours style here */
 
 .our-popular-tours {
-    margin: 100px 0;
     display: flex;
     gap: 53px;
 }
@@ -277,11 +280,82 @@ nav {
     transform: translate(-50%, -50%);
 }
 
+/* why-choose-us section style*/
+
+.why-choose-us h1 {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.why-choose-us p {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 24px 0 48px 0;
+}
+
+.our-service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.service-1 {
+    width: 49%;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.service-2 {
+    width: 49%;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.service-3 {
+    width: 50%;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+.service {
+    padding: 32px 32px 0 32px;
+}
+
+.service h3 {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    padding-top: 30px;
+    text-align: start;
+}
+
+.service p {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: start;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 600px) {
 
     /* Header */
+
+    section {
+        margin-top: 24px
+    }
 
     .container {
         width: 90%;
@@ -385,6 +459,29 @@ nav {
 
     .places h3 {
         font-size: 20px;
+    }
+
+    /* why-choose-us section style*/
+
+    .why-choose-us h1 {
+        font-size: 20px;
+    }
+
+    .why-choose-us p {
+        font-size: 14px;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .service h3 {
+        font-size: 20px;
+        padding-top: 16px;
+    }
+
+    .service p {
+        font-size: 14px;
     }
 
 }
