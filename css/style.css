@@ -351,6 +351,105 @@ nav {
     text-align: start;
 }
 
+/* Discounts */
+
+.discounts .dis-title {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.discounts .dis-description {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-top: 24px;
+    padding-bottom: 48px;
+}
+
+.discounts-part-1 {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.discounts-part-1 img {
+    width: 100%;
+}
+
+.place-ticket {
+    padding: 50px;
+    border: 1px solid #f03;
+    width: 579px;
+    height: 389px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    position: absolute;
+    top: 56px;
+    right: 56px;
+}
+
+.place-ticket-2 {
+    left: 56px;
+}
+
+.place-ticket .info {
+    display: flex;
+    gap: 24px;
+}
+
+.place-ticket .info li {
+    list-style: none;
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.info li i {
+    font-size: 20px;
+    color: #FF5400;
+}
+
+.place-ticket h2 {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 26px;
+}
+
+.place-ticket p {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 16px;
+}
+
+.place-ticket h3 {
+    color: #FF5400;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 16px;
+}
+
+.place-ticket .dis-btn {
+    border: none;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 8px;
+    background: #FF5400;
+    padding: 14px 42px;
+    margin-top: 24px;
+}
+
 /* Perfect-place style here */
 
 .perfect-place {
@@ -685,6 +784,78 @@ footer {
         font-size: 14px;
     }
 
+    /* Discounts */
+
+    .discounts .dis-title {
+        font-size: 20px;
+    }
+
+    .discounts .dis-description {
+        font-size: 14px;
+    }
+
+    .discounts-part-1 {
+        height: 500px;
+    }
+
+    .discounts .discounts-part-1 img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .place-ticket {
+        width: 90%;
+        height: 300px;
+        padding: 25px;
+        left: 16px;
+        top: 35%;
+    }
+
+    .place-ticket-2 {
+        bottom: 16px;
+        left: 16px;
+    }
+
+    /*  */
+    .place-ticket .info {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .place-ticket .info li {
+        font-size: 16px;
+        font-weight: 400;
+        gap: 8px;
+    }
+    
+    .place-ticket h2 {
+        font-size: 20px;
+        margin-top: 18px;
+    }
+    
+    .place-ticket p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 8px;
+    }
+
+    .place-ticket p span {
+        display: none;
+    }
+    
+    .place-ticket h3 {
+        color: #FF5400;
+        font-size: 16px;
+        font-weight: 800;
+        margin-top: 12px;
+    }
+    
+    .place-ticket .dis-btn {
+        font-size: 18px;
+        padding: 14px 42px;
+        margin-top: 16px;
+    }
+    /*  */
     /* perfect-place */
 
     .perfect-place {
