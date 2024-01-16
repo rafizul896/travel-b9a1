@@ -353,6 +353,12 @@ nav {
 
 /* Discounts */
 
+.discounts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .discounts .dis-title {
     color: #131318;
     text-align: center;
@@ -440,6 +446,17 @@ nav {
 }
 
 .place-ticket .dis-btn {
+    border: none;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 8px;
+    background: #FF5400;
+    padding: 14px 42px;
+    margin-top: 24px;
+}
+
+.discounts .see-btn {
     border: none;
     color: #FFF;
     font-size: 20px;
@@ -589,6 +606,56 @@ nav {
     color: #FFF;
     font-size: 24px;
     font-weight: 400;
+}
+
+/* review style here */
+
+.review-titel {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.review-all {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.review-user {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    border-radius: 5px;
+    padding: 25px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.user-text h1 {
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.user-text p {
+    color: #2f2f37;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.see-more {
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 35px;
+    gap: 10px;
+    color: #FF5400;
+    font-weight: 700;
 }
 
 /* Footer style here */
@@ -815,24 +882,23 @@ footer {
         bottom: 16px;
         left: 16px;
     }
-
-    /*  */
+    
     .place-ticket .info {
         gap: 20px;
         flex-wrap: wrap;
     }
-    
+
     .place-ticket .info li {
         font-size: 16px;
         font-weight: 400;
         gap: 8px;
     }
-    
+
     .place-ticket h2 {
         font-size: 20px;
         margin-top: 18px;
     }
-    
+
     .place-ticket p {
         font-size: 14px;
         line-height: 24px;
@@ -842,20 +908,20 @@ footer {
     .place-ticket p span {
         display: none;
     }
-    
+
     .place-ticket h3 {
         color: #FF5400;
         font-size: 16px;
         font-weight: 800;
         margin-top: 12px;
     }
-    
+
     .place-ticket .dis-btn {
         font-size: 18px;
         padding: 14px 42px;
         margin-top: 16px;
     }
-    /*  */
+
     /* perfect-place */
 
     .perfect-place {
@@ -863,7 +929,8 @@ footer {
     }
 
     .perfect-place-video iframe {
-        height: 190px;
+        height: 200px;
+        width: 100%;
     }
 
     .perfect-place-text h1 {
@@ -932,7 +999,29 @@ footer {
         font-weight: 400;
     }
 
+    /* review */
 
+    .review-all {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .review-user {
+        display: block;
+    }
+
+    .review-titel {
+        font-size: 25px;
+    }
+
+    .user-text h1 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+
+    .user-text p {
+        font-size: 14px;
+    }
 
 
     /* Footer */
